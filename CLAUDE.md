@@ -94,6 +94,14 @@ Each course adds a `src/scenes/<courseId>/` bundle; list its scenes here as it l
 |  | `baselines-seeds` | per-seed scatter over computed mean ± sd table | §6 |
 |  | `shift` | slice table → 2×2 container | §7 |
 |  | `limits` | claims table → 2×2 container | §8 |
+| `convolution` | `cross-correlation` | input + filter tables → computed response table → code card | §1 |
+|  | `channels-params` | model code card → computed layer table → 3-leaf container | §2 |
+|  | `receptive-field` | computed output-size table → computed receptive-field table → 3-leaf container | §3 |
+|  | `pooling` | feature-map table → computed pooled table → 3-leaf container | §4 |
+|  | `residual` | container of two nested paths → computed shape/parameter table | §5 |
+|  | `batchnorm` | computed BN train/eval table → 2×2 container | §6 |
+|  | `layernorm` | computed BN-vs-LN table → 2×2 container | §7 |
+|  | `resources` | computed params/MACs table → per-layer table → Conv1d code card | §8 |
 
 ## Invariants — do not break
 

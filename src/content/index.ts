@@ -3,6 +3,7 @@ import { feedforward } from './feedforward'
 import { backprop } from './backprop'
 import { training } from './training'
 import { generalisation } from './generalisation'
+import { convolution } from './convolution'
 import type { Course, Section } from './types'
 
 // Course registry, in syllabus order. Courses are added here as each is authored.
@@ -12,6 +13,7 @@ export const COURSES: Record<string, Course> = {
   [backprop.id]: backprop,
   [training.id]: training,
   [generalisation.id]: generalisation,
+  [convolution.id]: convolution,
 }
 
 export type { Course, Section }
