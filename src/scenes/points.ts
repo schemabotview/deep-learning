@@ -24,3 +24,21 @@ export function circle(cx: number, cy: number, r: number, steps = 64): PlotPoint
     return [cx + r * Math.cos(t), cy + r * Math.sin(t)]
   })
 }
+
+// ---- tiny exact numerics for neural traces --------------------------------------------------------
+
+/** Softmax with the max subtracted first (the stable form). */
+export const softmax = (z: number[]) => {
+  const m = Math.max(...z)
+  const e = z.map((v) => Math.exp(v - m))
+  const s = e.reduce((a, b) => a + b, 0)
+  return e.map((v) => v / s)
+}
+export const relu = (v: number) => Math.max(0, v)
+export const sigmoid = (v: number) => 1 / (1 + Math.exp(-v))
+/** Matrix–vector product, W as rows. */
+export const matvec = (W: number[][], x: number[]) => W.map((row) => row.reduce((a, w, j) => a + w * x[j], 0))
+/** Matrix–matrix product. */
+export const matmul = (A: number[][], B: number[][]) => A.map((row) => B[0].map((_, j) => row.reduce((a, v, k) => a + v * B[k][j], 0)))
+/** Format a number compactly for a table cell. */
+export const f2 = (v: number, d = 2) => (Math.abs(v) < 1e-12 ? '0' : v.toFixed(d))

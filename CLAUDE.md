@@ -63,6 +63,13 @@ Each course adds a `src/scenes/<courseId>/` bundle; list its scenes here as it l
 |  | `batching` | computed padded batch table → 2×3 container | §5 |
 |  | `task-boundaries` | contract table → 2×2 container | §6 |
 |  | `shape-assertions` | module code card → computed shape trace | §7 |
+| `feedforward` | `affine-collapse` | activation plot over computed collapse table | §1 |
+|  | `xor` | equal-axis XOR plot over computed forward table | §2 |
+|  | `depth-width` | computed parameter table → 2×2 container | §3 |
+|  | `heads` | head/loss/target table → 2×2 container | §4 |
+|  | `cross-entropy` | computed softmax/CE table → code card → 2×2 container | §5 |
+|  | `stable-softmax` | computed overflow table → reduction table | §6 |
+|  | `masked-loss` | computed masked-mean table → code card → 2×2 container | §7 |
 
 ## Invariants — do not break
 
