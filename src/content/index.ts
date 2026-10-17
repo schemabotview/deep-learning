@@ -1,0 +1,42 @@
+import { tensors } from './tensors'
+import { feedforward } from './feedforward'
+import { backprop } from './backprop'
+import { training } from './training'
+import { generalisation } from './generalisation'
+import { convolution } from './convolution'
+import { recurrent } from './recurrent'
+import { attention } from './attention'
+import { transformers } from './transformers'
+import { transfer } from './transfer'
+import { autoencoders } from './autoencoders'
+import { compute } from './compute'
+import { design } from './design'
+import type { Course, Section } from './types'
+
+// Course registry, in syllabus order. Courses are added here as each is authored.
+export const COURSES: Record<string, Course> = {
+  [tensors.id]: tensors,
+  [feedforward.id]: feedforward,
+  [backprop.id]: backprop,
+  [training.id]: training,
+  [generalisation.id]: generalisation,
+  [convolution.id]: convolution,
+  [recurrent.id]: recurrent,
+  [attention.id]: attention,
+  [transformers.id]: transformers,
+  [transfer.id]: transfer,
+  [autoencoders.id]: autoencoders,
+  [compute.id]: compute,
+  [design.id]: design,
+}
+
+export type { Course, Section }
+
+// slugOf / allSections are the shell's — the slug rule (`<courseId>-<sectionId>`) is part of the
+// route contract every recorder drives, so it cannot be a per-repo decision. Re-exported here
+// because this module is what the app and the scripts import them from.
+export { slugOf, allSections } from '@graphlearning/shell'
+
+export function getCourse(id: string): Course | undefined {
+  return COURSES[id]
+}

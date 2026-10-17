@@ -1,0 +1,8 @@
+{
+  "_comment": "Per-repo publishing identity, read by @graphlearning/shell's thumb / gen-descriptions scripts. Env vars (CONCEPT, SITE, APP_PATH, HASHTAGS, PANEL_BG) still override. SWAP every field but `site`.",
+  "concept": "Deep Learning",
+  "site": "https://graphl.in",
+  "appPath": "/deep-learning",
+  "hashtags": "#DeepLearning #NeuralNetworks #PyTorch #MachineLearning",
+  "panelBg": "radial-gradient(118% 104% at 70% 34%, #fb9d5c 0%, #9a3412 44%, #0f141a 100%)"
+}
