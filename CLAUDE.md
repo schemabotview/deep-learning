@@ -70,6 +70,14 @@ Each course adds a `src/scenes/<courseId>/` bundle; list its scenes here as it l
 |  | `cross-entropy` | computed softmax/CE table → code card → 2×2 container | §5 |
 |  | `stable-softmax` | computed overflow table → reduction table | §6 |
 |  | `masked-loss` | computed masked-mean table → code card → 2×2 container | §7 |
+| `backprop` | `chain-rule` | TB graph container ⟶ computed forward-values table | §1 |
+|  | `layer-gradients` | computed backward-trace table → 2×2 container | §2 |
+|  | `vjp` | LR gradient chain → computed VJP table → cost table → code card | §3 |
+|  | `shared-weights` | nested two-use graph → computed contribution table → 3-leaf container | §4 |
+|  | `batch-scaling` | per-example table → computed reduction table → 2-leaf container | §5 |
+|  | `autograd-hazards` | code card → operations table → 2×2 container | §6 |
+|  | `zero-grad` | computed .grad trace → loop code card → 2×2 container | §7 |
+|  | `finite-difference` | computed gradcheck table → kink table | §8 |
 
 ## Invariants — do not break
 
