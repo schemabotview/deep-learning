@@ -110,6 +110,12 @@ Each course adds a `src/scenes/<courseId>/` bundle; list its scenes here as it l
 |  | `lstm` | computed gate table → 2×2 container | §6 |
 |  | `bidirectional` | allowed table → 2×2 container → packing code card | §7 |
 |  | `teacher-forcing` | horizon-error plot over temporal-split table | §8 |
+| `attention` | `qkv` | 3-leaf container → trace table → code card | §1 |
+|  | `attn-scores` | plot (softmax saturation vs width) → table | §2 |
+|  | `masks` | masked-score table → weight table → code card | §3 |
+|  | `self-cross` | 2 nested TB containers → code card | §4 |
+|  | `multihead` | shape table → permutation table → 2×2 container | §5 |
+|  | `cost-limits` | plot (T² memory) → 2×2 container | §6 |
 
 ## Invariants — do not break
 
