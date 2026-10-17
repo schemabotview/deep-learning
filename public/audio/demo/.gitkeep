@@ -1,9 +1,0 @@
-Narration wavs land here: public/audio/<course>/<section-id>.wav
-
-The app resolves audio by that convention alone — there is no manifest at runtime — so a renamed
-section id plays silence with no error. `npm run check` guards this, but only once a course has its
-first wav: a course mid-authoring has none at all, and reporting every known-missing file on every
-run just trains you to ignore the guard.
-
-Wavs are produced by the Colab + Chatterbox pass in scripts/colab_generate_audio.ipynb, never by
-hand. Downstream timing reads the wav's length with ffprobe, never playback.

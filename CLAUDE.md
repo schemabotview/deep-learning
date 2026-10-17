@@ -56,6 +56,13 @@ Each course adds a `src/scenes/<courseId>/` bundle; list its scenes here as it l
 
 | course | scene id | shape | used by |
 | --- | --- | --- | --- |
+| `tensors` | `learned-features` | container of two nested routes → computed code card | §1 |
+|  | `inductive-bias` | candidate table → 2×2 container | §2 |
+|  | `tensor-shapes` | axis table → computed memory table → code card | §3 |
+|  | `broadcasting` | computed broadcast table → permute/reshape table → code card | §4 |
+|  | `batching` | computed padded batch table → 2×3 container | §5 |
+|  | `task-boundaries` | contract table → 2×2 container | §6 |
+|  | `shape-assertions` | module code card → computed shape trace | §7 |
 
 ## Invariants — do not break
 
