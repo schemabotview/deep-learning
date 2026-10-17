@@ -138,6 +138,13 @@ Each course adds a `src/scenes/<courseId>/` bundle; list its scenes here as it l
 |  | `usefulness` | plot (MSE vs probe by width) → table | §4 |
 |  | `anomaly` | plot (error strips + threshold) → 2×2 container | §5 |
 |  | `latent-models` | 2 nested TB containers → table | §6 |
+| `compute` | `memory` | budget table → 2×2 container → code card | §1 |
+|  | `precision` | format table → rounding table → code card | §2 |
+|  | `accumulation` | BN stats table → 2×2 container → code card | §3 |
+|  | `checkpointing` | LR container → table → code card | §4 |
+|  | `profiling` | profile table → 2×2 container → code card | §5 |
+|  | `comparison` | plot (throughput vs F1, seeds) → table | §6 |
+|  | `boundaries` | size table → technique table → 3-leaf container | §7 |
 
 ## Invariants — do not break
 
