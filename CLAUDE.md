@@ -78,6 +78,14 @@ Each course adds a `src/scenes/<courseId>/` bundle; list its scenes here as it l
 |  | `autograd-hazards` | code card → operations table → 2×2 container | §6 |
 |  | `zero-grad` | computed .grad trace → loop code card → 2×2 container | §7 |
 |  | `finite-difference` | computed gradcheck table → kink table | §8 |
+| `training` | `training-loop` | loop code card → state table | §1 |
+|  | `eval-nograd` | 2×2 switch table → layer table → code card | §2 |
+|  | `checkpoints` | computed train/val curve + best marker over record table | §3 |
+|  | `optimisers` | computed one-step update table → 2×2 container | §4 |
+|  | `initialisation` | computed activation-spread plot over symmetry table | §5 |
+|  | `schedules` | computed warmup-cosine plot → clipping table → 4-leaf row | §6 |
+|  | `seeds` | seed code card → runs table → 3-leaf container | §7 |
+|  | `resume` | resume-spike plot over failure table | §8 |
 
 ## Invariants — do not break
 

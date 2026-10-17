@@ -1,6 +1,7 @@
 import { tensors } from './tensors'
 import { feedforward } from './feedforward'
 import { backprop } from './backprop'
+import { training } from './training'
 import type { Course, Section } from './types'
 
 // Course registry, in syllabus order. Courses are added here as each is authored.
@@ -8,6 +9,7 @@ export const COURSES: Record<string, Course> = {
   [tensors.id]: tensors,
   [feedforward.id]: feedforward,
   [backprop.id]: backprop,
+  [training.id]: training,
 }
 
 export type { Course, Section }
