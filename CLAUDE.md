@@ -145,6 +145,12 @@ Each course adds a `src/scenes/<courseId>/` bundle; list its scenes here as it l
 |  | `profiling` | profile table → 2×2 container → code card | §5 |
 |  | `comparison` | plot (throughput vs F1, seeds) → table | §6 |
 |  | `boundaries` | size table → technique table → 3-leaf container | §7 |
+| `design` | `rationale` | 3×2 contract container → table | §1 |
+|  | `configuration` | LR container → config table → code card | §2 |
+|  | `design-comparison` | comparison table → 2×2 container | §3 |
+|  | `contract` | contract table → 2×2 container → code card | §4 |
+|  | `handoff` | limitations table → 3×2 container | §5 |
+|  | `practice` | 3×2 container → table | §6 |
 
 ## Invariants — do not break
 

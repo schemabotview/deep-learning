@@ -11,11 +11,12 @@ import { transformersScenes } from './transformers'
 import { transferScenes } from './transfer'
 import { autoencodersScenes } from './autoencoders'
 import { computeScenes } from './compute'
+import { designScenes } from './design'
 
 // Scene registry. Sections reference scenes by id; scenes are grouped by course (one folder each,
 // mirroring src/content). Ids are globally unique across courses, so the flat lookup below is
 // unambiguous. Courses are added here as each is authored.
-const ALL: Scene[] = [...tensorsScenes, ...feedforwardScenes, ...backpropScenes, ...trainingScenes, ...generalisationScenes, ...convolutionScenes, ...recurrentScenes, ...attentionScenes, ...transformersScenes, ...transferScenes, ...autoencodersScenes, ...computeScenes]
+const ALL: Scene[] = [...tensorsScenes, ...feedforwardScenes, ...backpropScenes, ...trainingScenes, ...generalisationScenes, ...convolutionScenes, ...recurrentScenes, ...attentionScenes, ...transformersScenes, ...transferScenes, ...autoencodersScenes, ...computeScenes, ...designScenes]
 
 export const SCENES: Record<string, Scene> = Object.fromEntries(ALL.map((s) => [s.id, s]))
 

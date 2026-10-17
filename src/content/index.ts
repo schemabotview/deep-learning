@@ -10,6 +10,7 @@ import { transformers } from './transformers'
 import { transfer } from './transfer'
 import { autoencoders } from './autoencoders'
 import { compute } from './compute'
+import { design } from './design'
 import type { Course, Section } from './types'
 
 // Course registry, in syllabus order. Courses are added here as each is authored.
@@ -26,6 +27,7 @@ export const COURSES: Record<string, Course> = {
   [transfer.id]: transfer,
   [autoencoders.id]: autoencoders,
   [compute.id]: compute,
+  [design.id]: design,
 }
 
 export type { Course, Section }
