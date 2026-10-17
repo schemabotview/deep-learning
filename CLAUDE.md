@@ -132,6 +132,12 @@ Each course adds a `src/scenes/<courseId>/` bundle; list its scenes here as it l
 |  | `views` | augmentation table → 2×2 container → code card | §6 |
 |  | `contamination` | LR container → 2 tables → code card | §7 |
 |  | `provenance` | 3×2 container → table → code card | §8 |
+| `autoencoders` | `recon` | 3-leaf container → trace table → code card | §1 |
+|  | `ae-pca` | plot (PCA vs AE direction, unequal axes) → table | §2 |
+|  | `shortcuts` | variant table → 2×2 container → code card | §3 |
+|  | `usefulness` | plot (MSE vs probe by width) → table | §4 |
+|  | `anomaly` | plot (error strips + threshold) → 2×2 container | §5 |
+|  | `latent-models` | 2 nested TB containers → table | §6 |
 
 ## Invariants — do not break
 
