@@ -86,6 +86,14 @@ Each course adds a `src/scenes/<courseId>/` bundle; list its scenes here as it l
 |  | `schedules` | computed warmup-cosine plot → clipping table → 4-leaf row | §6 |
 |  | `seeds` | seed code card → runs table → 3-leaf container | §7 |
 |  | `resume` | resume-spike plot over failure table | §8 |
+| `generalisation` | `capacity-noise` | learning curves + label ceiling over memorisation table | §1 |
+|  | `regularisers` | computed dropout table → regulariser table | §2 |
+|  | `augmentation` | transform table → shortcut table → 2×2 container | §3 |
+|  | `search-budget` | declared-search code card → results table → 3-leaf container | §4 |
+|  | `diagnostics` | tiny-subset loss plot over per-layer table | §5 |
+|  | `baselines-seeds` | per-seed scatter over computed mean ± sd table | §6 |
+|  | `shift` | slice table → 2×2 container | §7 |
+|  | `limits` | claims table → 2×2 container | §8 |
 
 ## Invariants — do not break
 
