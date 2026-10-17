@@ -102,6 +102,14 @@ Each course adds a `src/scenes/<courseId>/` bundle; list its scenes here as it l
 |  | `batchnorm` | computed BN train/eval table → 2×2 container | §6 |
 |  | `layernorm` | computed BN-vs-LN table → 2×2 container | §7 |
 |  | `resources` | computed params/MACs table → per-layer table → Conv1d code card | §8 |
+| `recurrent` | `embeddings` | computed lookup table → code card → 2×2 container | §1 |
+|  | `sequence-tasks` | visibility table → 2×3 container | §2 |
+|  | `shifted-targets` | computed shift/loss table → computed mean table | §3 |
+|  | `rnn-state` | TB unrolled cells ⟶ computed trace table + code card | §4 |
+|  | `bptt` | computed gradient-decay plot over truncation code card | §5 |
+|  | `lstm` | computed gate table → 2×2 container | §6 |
+|  | `bidirectional` | allowed table → 2×2 container → packing code card | §7 |
+|  | `teacher-forcing` | horizon-error plot over temporal-split table | §8 |
 
 ## Invariants — do not break
 
