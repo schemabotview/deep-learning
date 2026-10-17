@@ -116,6 +116,14 @@ Each course adds a `src/scenes/<courseId>/` bundle; list its scenes here as it l
 |  | `self-cross` | 2 nested TB containers → code card | §4 |
 |  | `multihead` | shape table → permutation table → 2×2 container | §5 |
 |  | `cost-limits` | plot (T² memory) → 2×2 container | §6 |
+| `transformers` | `block` | 2 TB sublayer containers → param table → code card | §1 |
+|  | `positions` | plot (sinusoidal PE) → table | §2 |
+|  | `patterns` | 3 nested TB containers → table | §3 |
+|  | `visibility` | two mask tables → code card | §4 |
+|  | `objectives` | loss table → loss table → 2×2 container | §5 |
+|  | `parallel-generation` | 2 nested TB containers → table → code card | §6 |
+|  | `caching` | plot (KV cache memory) → table | §7 |
+|  | `reliability` | plot (loss vs fact accuracy) → table | §8 |
 
 ## Invariants — do not break
 

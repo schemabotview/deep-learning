@@ -6,6 +6,7 @@ import { generalisation } from './generalisation'
 import { convolution } from './convolution'
 import { recurrent } from './recurrent'
 import { attention } from './attention'
+import { transformers } from './transformers'
 import type { Course, Section } from './types'
 
 // Course registry, in syllabus order. Courses are added here as each is authored.
@@ -18,6 +19,7 @@ export const COURSES: Record<string, Course> = {
   [convolution.id]: convolution,
   [recurrent.id]: recurrent,
   [attention.id]: attention,
+  [transformers.id]: transformers,
 }
 
 export type { Course, Section }
