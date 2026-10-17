@@ -1,0 +1,16 @@
+{
+  "_comment": "Curated publish titles (YouTube title + thumbnail header) per course, keyed by course id. Search-first: what someone would actually type, never 'Course 4'. One entry per course in src/content/index.ts.",
+  "tensors": "Tensors, Shapes And Broadcasting For Neural Networks",
+  "feedforward": "Neural Network Forward Pass, Activations And Cross-Entropy Loss",
+  "backprop": "Backpropagation And Autograd Explained Step By Step",
+  "training": "Training Neural Networks: Optimisers, Initialisation And Reproducibility",
+  "generalisation": "Neural Network Overfitting, Dropout, Augmentation And Evaluation",
+  "convolution": "Convolutional Networks, ResNet Blocks And Batch Normalisation",
+  "recurrent": "RNNs, LSTMs And Sequence Embeddings Explained",
+  "attention": "Attention Mechanism: Queries, Keys, Values And Masks",
+  "transformers": "Transformers Explained: Blocks, Masks And Next-Token Training",
+  "transfer": "Transfer Learning, Fine-Tuning And Self-Supervised Learning",
+  "autoencoders": "Autoencoders, Bottlenecks And Reconstruction Loss",
+  "compute": "GPU Memory, Mixed Precision And Efficient Neural Training",
+  "design": "End-To-End Deep Learning Project: From Baseline To Handoff"
+}
