@@ -124,6 +124,14 @@ Each course adds a `src/scenes/<courseId>/` bundle; list its scenes here as it l
 |  | `parallel-generation` | 2 nested TB containers → table → code card | §6 |
 |  | `caching` | plot (KV cache memory) → table | §7 |
 |  | `reliability` | plot (loss vs fact accuracy) → table | §8 |
+| `transfer` | `source-target` | plot (3 transfer learning curves) → table | §1 |
+|  | `probe-head` | 3-leaf container → strategy table → code card | §2 |
+|  | `fine-tune` | plot (3 adaptation curves) → rate table → code card | §3 |
+|  | `buffers` | BN drift table → 2×2 container → code card | §4 |
+|  | `signals` | 3-leaf container → InfoNCE table → code card | §5 |
+|  | `views` | augmentation table → 2×2 container → code card | §6 |
+|  | `contamination` | LR container → 2 tables → code card | §7 |
+|  | `provenance` | 3×2 container → table → code card | §8 |
 
 ## Invariants — do not break
 
